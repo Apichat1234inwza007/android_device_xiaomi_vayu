@@ -449,6 +449,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+<<<<<<< HEAD
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
@@ -473,6 +474,11 @@ PRODUCT_PACKAGES += \
 
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
+=======
+# Overlay-RRO
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
+>>>>>>> e937820 (vayu: overlay: Set default hotspot ssid)
 
 # QDCM
 PRODUCT_COPY_FILES += \
