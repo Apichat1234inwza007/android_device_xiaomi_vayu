@@ -451,6 +451,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlay-RRO
 PRODUCT_PACKAGES += \
+    TargetSettingsProvider \
     TargetWifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
