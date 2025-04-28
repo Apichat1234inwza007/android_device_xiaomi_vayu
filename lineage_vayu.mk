@@ -12,14 +12,32 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit from common lineage configuration
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := Unofficial
-TARGET_DISABLE_EPPE := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := false
+#Axion Bringup!
+
+AXION_CAMERA_REAR_INFO := 48,8,5,2
+
+AXION_CAMERA_FRONT_INFO := 20
+
+AXION_MAINTAINER := apicaht_chata
+
+AXION_PROCESSOR := Snapdragon_860
+
+BYPASS_CHARGE_SUPPORTED := false
+
+AXION_CPU_PRIME_CORES := 0
+AXION_CPU_BIG_CORES := 1,2,3
+AXION_CPU_SMALL_CORES := 4,5,6,7
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.axion_cpu_prime=$(AXION_CPU_PRIME_CORES) \
+    persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
+    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
 
 # Boot animation
+TARGET_ARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
