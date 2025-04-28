@@ -1,7 +1,3 @@
-<h2 align="center">Device configuration for Poco X3 Pro</h2>
-
-![mockup-x3p-shogun](https://user-images.githubusercontent.com/58150791/156148014-8d902e54-eff0-4c4d-b626-81f78084b2d2.jpg)
-
 ### Information
 
 Basic   | Spec Sheet
