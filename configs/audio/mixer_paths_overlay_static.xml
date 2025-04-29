@@ -991,10 +991,6 @@
         <ctl name="DEC7 Volume" value="90" />
     </path>
 
-<<<<<<< HEAD:configs/audio/mixer_paths_overlay_static.xml
-</mixer>
-=======
     <path name="hph-highquality-mode">
     </path>
 </mixer>
->>>>>>> 4420f6d (vayu: Apply NLSound optimization for mixer paths):audio/mixer_paths_overlay_static.xml
