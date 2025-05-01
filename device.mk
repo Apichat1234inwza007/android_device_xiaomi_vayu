@@ -40,7 +40,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 AB_OTA_UPDATER := false
 
 # Camera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/vayu-miuicamera/products/miuicamera.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
