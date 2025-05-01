@@ -117,7 +117,6 @@ TARGET_ENABLE_BLUR := true
 
 # Camera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
-
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \

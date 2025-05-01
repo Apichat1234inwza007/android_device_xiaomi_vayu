@@ -26,14 +26,21 @@ AXION_PROCESSOR := Snapdragon_860
 
 BYPASS_CHARGE_SUPPORTED := false
 
-AXION_CPU_PRIME_CORES := 0
-AXION_CPU_BIG_CORES := 1,2,3
-AXION_CPU_SMALL_CORES := 4,5,6,7
+# Default core groups
+AXION_CPU_SMALL_CORES ?= 4,5,6,7
+AXION_CPU_BIG_CORES ?= 0,1,2,3
+AXION_CPU_BG ?= 0-2
+AXION_CPU_FG ?= 0-5
+AXION_CPU_LIMIT_BG ?= 0-1
 
+# AxionOS scheduling properties
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.axion_cpu_prime=$(AXION_CPU_PRIME_CORES) \
     persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
-    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
+    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES) \
+    persist.sys.axion_cpu_bg=$(AXION_CPU_BG) \
+    persist.sys.axion_cpu_limit_bg=$(AXION_CPU_LIMIT_BG) \
+    persist.sys.axion_cpu_fg=$(AXION_CPU_FG)
+
 
 # Boot animation
 TARGET_ARGET_BOOT_ANIMATION_RES := 1080
@@ -45,6 +52,8 @@ PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NO_CAMERA := false
+
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
