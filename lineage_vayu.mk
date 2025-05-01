@@ -41,6 +41,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.axion_cpu_limit_bg=$(AXION_CPU_LIMIT_BG) \
     persist.sys.axion_cpu_fg=$(AXION_CPU_FG)
 
+TARGET_INCLUDES_LOS_PREBUILTS := true
 
 # Boot animation
 TARGET_ARGET_BOOT_ANIMATION_RES := 1080
