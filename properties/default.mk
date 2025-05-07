@@ -21,6 +21,5 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     pm.dexopt.install=speed-profile \
     dalvik.vm.image-dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-threads=8 \
-    dalvik.vm.dex2oat-filter=speed \
-    dalvik.vm.dex2oat-threads=8
+    dalvik.vm.dex2oat-filter=speed
 endif

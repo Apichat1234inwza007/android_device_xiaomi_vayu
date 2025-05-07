@@ -32,6 +32,7 @@ AXION_CPU_BIG_CORES ?= 0,1,2,3
 AXION_CPU_BG ?= 0-2
 AXION_CPU_FG ?= 0-5
 AXION_CPU_LIMIT_BG ?= 0-1
+AXION_DEBUGGING_ENABLED ?= false
 
 # AxionOS scheduling properties
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -40,7 +41,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.axion_cpu_bg=$(AXION_CPU_BG) \
     persist.sys.axion_cpu_limit_bg=$(AXION_CPU_LIMIT_BG) \
     persist.sys.axion_cpu_fg=$(AXION_CPU_FG)
+    ro.sys.axion_userdebug_enabled=$(AXION_DEBUGGING_ENABLED)
 
+TARGET_INCLUDE_VIPERFX := true
+TARGET_ENABLE_BLUR := true
 TARGET_INCLUDES_LOS_PREBUILTS := true
 
 # Boot animation

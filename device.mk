@@ -572,6 +572,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/com.nxp.mifare.xml
 
+#Viper4FX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Thermal HAL
 SOONG_CONFIG_NAMESPACES += thermal_hal_feature
 SOONG_CONFIG_thermal_hal_feature += \
@@ -646,3 +649,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
 include vendor/xiaomi/vayu/vayu-vendor.mk
+
