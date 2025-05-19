@@ -44,7 +44,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.sys.axion_userdebug_enabled=$(AXION_DEBUGGING_ENABLED)
 
 TARGET_INCLUDE_VIPERFX := true
-TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := false
 TARGET_INCLUDES_LOS_PREBUILTS := true
 
 # Boot animation
